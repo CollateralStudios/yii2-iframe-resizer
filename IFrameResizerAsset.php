@@ -22,6 +22,9 @@ class IFrameResizerAsset extends AssetBundle
     public $css = [];
     public $js = [  // Configured conditionally (source/minified) during init()
     ];
+    public $jsOptions = [
+        'position' => \yii\web\View::POS_HEAD
+    ];
     public $depends = [];   // There's a native version as well, so jQuery dependency is not specified by default
 
     public function init()
